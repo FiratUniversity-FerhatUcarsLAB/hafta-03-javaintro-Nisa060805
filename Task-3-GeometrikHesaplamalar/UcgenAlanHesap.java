@@ -1,4 +1,10 @@
-Görev 3: Alan ve Çevre Hesaplamaları
-3.1 - DaireHesap.java: Yarıçap 5.5 olan dairenin alan ve çevresini hesaplar.
-3.2 - DikdortgenHesap.java: En=4.5, Boy=7.9 olan dikdörtgenin alan ve çevresini hesaplar.
-3.3 - UcgenHeron.java: Kenarları 3,4,5 olan üçgenin alanını Heron formülü ile hesaplar.
+public class UcgenHeron {
+    public static void main(String[] args) {
+        double a = 3, b = 4, c = 5;
+        double s = (a + b + c) / 2;
+        double alan = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+
+        System.out.println("Kenarlar: a=" + a + ", b=" + b + ", c=" + c);
+        System.out.println("Alan: " + alan);
+    }
+}
